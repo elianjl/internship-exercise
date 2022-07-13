@@ -1,2 +1,2 @@
 # internship-exercise
-Exercise for an intership in IOET
+Exercise for an intership at IOET
