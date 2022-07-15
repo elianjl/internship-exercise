@@ -1,3 +1,5 @@
+__author__ = "elianjl"
+
 
 class Employee:
     # Constructor
