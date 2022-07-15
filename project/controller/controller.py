@@ -22,10 +22,8 @@ def list_employee(lines):
 def compare_schedule(first_checkin, first_checkout, second_checkin, second_checkout):
     # compare each case when the employees coincidence at the office in the same time
     flag = False
-    if first_checkin <= second_checkin and first_checkout >= second_checkin:
-        if first_checkin <= second_checkout and first_checkout >= second_checkout:
-            if first_checkin >= second_checkin and first_checkout <= second_checkout:
-                flag = True
+    if first_checkin <= second_checkout and first_checkout >= second_checkin:
+        flag = True
     return flag
 
 
