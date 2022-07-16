@@ -47,7 +47,7 @@ def count_coincidence(employees):
 
 # function that print the coincidences
 def call_view():
-    file_name = 'data_employees.txt'
+    file_name = 'data/data_employees.txt'
     lines = read_file(file_name)
     employees = list_employee(lines)
     coincidences = count_coincidence(employees)
