@@ -53,6 +53,7 @@ The approach that I found for the solution was look for the input data, after th
 
 To run the unit tests:
 - Open a new terminal.
+- Install pytest `pip install -U pytest`
 - Write `pytest`
 
 ### 5.2. In CMD or PowerShell:
