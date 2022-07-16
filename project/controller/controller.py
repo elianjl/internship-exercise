@@ -1,4 +1,5 @@
 __author__ = "elianjl"
+
 from model.model import Employee
 from view.view import print_coincidences
 
