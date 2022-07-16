@@ -5,24 +5,18 @@ from view.view import print_coincidences
 
 # function that return an array of strings with information of the employees
 def read_file(file_name):
-    try:
-        with open(file_name) as file_obj:
-            lines = file_obj.readlines()
-            return lines
-    except:
-        return None
+    with open(file_name) as file_obj:
+        lines = file_obj.readlines()
+        return lines
 
 
 # function that return an array of Employee's object given an array of strings with information of the employees
 def list_employee(lines):
-    try:
-        employees = []
-        for i in lines:
-            employee = i.split("=")
-            employees.append(Employee(employee[0], employee[1].split(",")))
-        return employees
-    except:
-        return None
+    employees = []
+    for i in lines:
+        employee = i.split("=")
+        employees.append(Employee(employee[0], employee[1].split(",")))
+    return employees
 
 
 # function that compare each case when the employees coincidence at the office in the same time
@@ -53,7 +47,7 @@ def count_coincidence(employees):
 
 # function that print the coincidences
 def call_view():
-    file_name = 'data/data_employees.txt'
+    file_name = 'data_employees.txt'
     lines = read_file(file_name)
     employees = list_employee(lines)
     coincidences = count_coincidence(employees)
