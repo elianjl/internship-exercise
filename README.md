@@ -52,6 +52,7 @@ The approach that I found for the solution was look for the input data, after th
 - Run the _app.py_ file.
 
 To run the unit tests:
+- Enter to the project folder.
 - Open a new terminal.
 - Install pytest `pip install -U pytest`
 - Write `pytest`
